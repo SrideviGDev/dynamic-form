@@ -1,0 +1,52 @@
+{
+    "fields": [
+      {
+        "type": "select",
+        "label": "Age Group",
+        "name": "ageGroup",
+        "options": ["Infant", "Child", "Teenager", "Young Adult", "Adult", "Senior"],
+        "class": "age-group-select",
+        "value": ""
+      },
+      {
+        "type": "select",
+        "label": "Age Range",
+        "name": "ageRange",
+        "options": ["0-2 years", "3-12 years", "13-19 years", "20-39 years", "40-59 years", "60+ years"],
+        "class": "age-range-select",
+        "value": "",
+        "dependencies": {
+          "ageGroup": {
+            "Infant": "0-2 years",
+            "Child": "3-12 years",
+            "Teenager": "13-19 years",
+            "Young Adult": "20-39 years",
+            "Adult": "40-59 years",
+            "Senior": "60+ years"
+          }
+        }
+      },
+      {
+        "type": "date",
+        "label": "Start Date",
+        "name": "startDate",
+        "class": "start-date-picker",
+        "value": ""
+      },
+      {
+        "type": "date",
+        "label": "End Date",
+        "name": "endDate",
+        "class": "end-date-picker",
+        "value": ""
+      },
+      {
+        "type": "number",
+        "label": "Duration (days)",
+        "name": "duration",
+        "class": "duration-input",
+        "value": ""
+      }
+    ]
+  }
+  

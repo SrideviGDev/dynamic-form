@@ -1,0 +1,21 @@
+/* dynamic-material-form.component.css */
+.dynamic-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .form-group {
+    flex: 1 1 calc(33.333% - 30px);
+    min-width: 200px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+
+  mat-form-field {
+    width: 100%;
+  }
+
