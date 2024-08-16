@@ -22,15 +22,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 The form's HTML and behavior are dynamically generated based on a JSON configuration. This JSON defines the form fields, their types, labels, default values, validation rules, and any additional settings like CSS classes or dependencies on other fields.
 
-**Explanation of JSON Fields**
--**type**: The type of input field (select, number, date, etc.).
--**label**: The label that will appear next to the input field.
--**name**: The name of the form control, which is used as a key in the FormGroup.
--**options**: For select inputs, an array of options that can be chosen.
--**value**: The default value for the field.
--**validation**: An array of validation rules applied to the field (required, min, max, etc.).
--**cssClass**: Custom CSS class(es) applied to the input element.
--**dependencies**: Logic that defines how the field’s options or value depend on the value of another field.
+**Explanation of JSON Fields** <br />
+**type**: The type of input field (select, number, date, etc.). <br />
+**label**: The label that will appear next to the input field. <br />
+**name**: The name of the form control, which is used as a key in the FormGroup. <br />
+**options**: For select inputs, an array of options that can be chosen. <br />
+**value**: The default value for the field. <br />
+**validation**: An array of validation rules applied to the field (required, min, max, etc.). <br />
+**cssClass**: Custom CSS class(es) applied to the input element. <br />
+**dependencies**: Logic that defines how the field’s options or value depend on the value of another field. <br />
 
 ## Dynamic HTML Generation
 
