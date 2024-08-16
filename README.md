@@ -22,15 +22,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 The form's HTML and behavior are dynamically generated based on a JSON configuration. This JSON defines the form fields, their types, labels, default values, validation rules, and any additional settings like CSS classes or dependencies on other fields.
 
-Explanation of JSON Fields
-type: The type of input field (select, number, date, etc.).
-label: The label that will appear next to the input field.
-name: The name of the form control, which is used as a key in the FormGroup.
-options: For select inputs, an array of options that can be chosen.
-value: The default value for the field.
-validation: An array of validation rules applied to the field (required, min, max, etc.).
-cssClass: Custom CSS class(es) applied to the input element.
-dependencies: Logic that defines how the field’s options or value depend on the value of another field.
+**Explanation of JSON Fields**
+-**type**: The type of input field (select, number, date, etc.).
+-**label**: The label that will appear next to the input field.
+-**name**: The name of the form control, which is used as a key in the FormGroup.
+-**options**: For select inputs, an array of options that can be chosen.
+-**value**: The default value for the field.
+-**validation**: An array of validation rules applied to the field (required, min, max, etc.).
+-**cssClass**: Custom CSS class(es) applied to the input element.
+-**dependencies**: Logic that defines how the field’s options or value depend on the value of another field.
 
 ## Dynamic HTML Generation
 
@@ -38,6 +38,7 @@ Based on the JSON structure, the HTML for the form is generated dynamically. Thi
 
 ## Cross-Field Manipulations
 
-Certain fields in the form may depend on the values of other fields. For example, the ageRange field’s options may change based on the selected ageGroup. This logic is handled dynamically by subscribing to changes in the dependent fields and updating the options or values of related fields.
+Certain fields in the form may depend on the values of other fields. 
+-Here, the ageRange field’s options may change based on the selected ageGroup. This logic is handled dynamically by subscribing to changes in the dependent fields and updating the options or values of related fields.
 
-The duration field can be dynamically calculated based on the startDate and endDate fields. This requires updating the duration field whenever either date changes.
+-The duration field can be dynamically calculated based on the startDate and endDate fields. This requires updating the duration field whenever either date changes.
