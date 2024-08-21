@@ -38,7 +38,7 @@ Based on the JSON structure, the HTML for the form is generated dynamically. Thi
 
 ## Cross-Field Manipulations
 
-Certain fields in the form may depend on the values of other fields. 
--Here, the ageRange field’s options may change based on the selected ageGroup. This logic is handled dynamically by subscribing to changes in the dependent fields and updating the options or values of related fields.
+Certain fields in the form may depend on the values of other fields. <br />
+Here, the ageRange field’s options may change based on the selected ageGroup. This logic is handled dynamically by subscribing to changes in the dependent fields and updating the options or values of related fields.<br />
 
--The duration field can be dynamically calculated based on the startDate and endDate fields. This requires updating the duration field whenever either date changes.
+The duration field can be dynamically calculated based on the startDate and endDate fields. This requires updating the duration field whenever either date changes.
